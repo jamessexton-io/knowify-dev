@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit" // Was true, changed to explicit
+  },
+  // For TypeScript files, you might want ESLint to be the formatter
+  // to handle both linting fixes and Prettier formatting via eslint-config-prettier
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint" // Use ESLint for TS files
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint" // Use ESLint for TSX files
+  }
+}
